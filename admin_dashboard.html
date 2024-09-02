@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css"/>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <div id="dash">
+    <h2>Admin Dashboard</h2>
+    <h3>Vote Counts:</h3>
+    <ul>
+        {% for candidate, count in votes_count %}
+            <li>{{ candidate }}: {{ count }}</li>
+        {% endfor %}
+    </ul>
+    <a href="admin_login.html"></a>
+    </div>
+    </py-script>
+</body>
+</html>
